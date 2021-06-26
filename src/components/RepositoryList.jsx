@@ -67,7 +67,7 @@ const renderItem = ({ item }) => (
         ratingAverage={item.ratingAverage}
         reviewCount={item.reviewCount}
         avatar={item.ownerAvatarUrl}
-    />
+    />  
 );
 
 const RepositoryList = () => {
