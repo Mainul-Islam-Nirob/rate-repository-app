@@ -1,11 +1,20 @@
 import React from "react";
-import { Pressable } from "react-native";
+import { Pressable, StyleSheet } from "react-native";
+import { Link } from "react-router-native";
 import Subheading from "./Subheading";
 
-const AppBarTab = ({ children }) => (
-  <Pressable>  
-    <Subheading color="textLight">{children}</Subheading>
-  </Pressable>
-);
+const styles = StyleSheet.create({
+  tab: {
+    paddingRight: 15,
+  },
+});
+
+const AppBarTab = ({ children, link }) => (
+  <Link to={link} component={Pressable} activeOpacity={0.8}>
+    <Subheading style={styles.tab} color="textLight">
+      {children}
+    </Subheading>
+  </Link>
+); 
 
 export default AppBarTab;
