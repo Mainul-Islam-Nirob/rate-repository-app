@@ -7,6 +7,7 @@ import Subheading from "./Subheading";
 const styles = StyleSheet.create({
   descriptionContainer: {
     display: "flex",
+    flexShrink: 1,
     alignItems: "flex-start",
     paddingLeft: 20,
   },
