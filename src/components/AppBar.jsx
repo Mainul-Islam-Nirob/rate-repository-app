@@ -25,6 +25,6 @@ const AppBar = () => {
             </ScrollView>
         </View>
     );
-};
+}; 
 
 export default AppBar;
