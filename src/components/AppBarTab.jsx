@@ -9,8 +9,8 @@ const styles = StyleSheet.create({
   },
 });
 
-const AppBarTab = ({ children, link }) => (
-  <Link to={link} component={Pressable} >
+const AppBarTab = ({ children, link, onPress }) => (
+  <Link onPress={onPress} to={link} component={Pressable} >
     <Subheading style={styles.tab} color="textLight">
       {children}
     </Subheading>
